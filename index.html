@@ -2,43 +2,335 @@
 <html>
 <head>
 	<meta charset=utf-8 />
-	<title>actions</title>
-	<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+	<title>lunxun</title>
 	<style type="text/css">
-	div.content a{
+	body,html{
+		width: 100%;
+		height: 100%;
+		padding: 0px;
+		margin:0px;
+	}
+	body{
+		margin: 0px;
+		font-family: "微软雅黑"
+	}
+	div.show{
+		width:267px;
+		height: 396px;
+		padding: 0px;
+		position: relative;
+		overflow:hidden;
+	}
+	div.show ul.img-list{
+		width: 1869px;
+		list-style-type: none;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		padding: 0px;
+		margin:0px;
+	}
+	div.show ul.img-list li{
+		float: left;
+		display: inline;
+	}
+	div.show ul.list{
+		position: absolute;
+		right: 30px;
+		bottom: 10px;
+		padding: 0px;
+	}
+	div.show ul.list li{
+		list-style-type: none;
+		width: 9px;
+		height: 9px;
+		border-radius: 8px;
+		float:left; 
+		margin-left: 8px;
+		background-color: #FFF;
+		opacity: 0.5;
+		filter:alpha(opacity=50);
+	}
+	div.show ul.list li.on{
+		opacity: 1;
+		filter:alpha(opacity=100)
+	}
+	div.show b{
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		border:3px solid #fff;
+		color: #fff;
+		font-size: 40px;
+		font-weight: 90;
+		background: rgba(0, 0, 0, 0.80);
+		position: absolute;
+		margin-top:-15px;
+		top: 40%;
+		z-index: 100;
+		border-radius: 20px;
+		transition: opacity 1s;
+		transition: margin-top 0.5s;
+		text-indent: 5px;
+		line-height: 30px;
+		opacity: 0.2;
+		filter:alpha(opacity=20);
+	}
+	div.show b.on{
+		opacity: 0.8;
+		filter:alpha(opacity=80);
+		margin-top: -20px;
+		cursor: pointer;
+	}
+	div.show b.pre{
+		left: 2%;
+	}
+	div.show b.next{
+		right: 2%;		 
+	}
+	div.show b.display{
+		opacity: 0.8;
+		filter:alpha(opacity=80);
+	}
+	.header{
+		background: rgba(0, 0, 0, 0.80);;
+		position: fixed;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		z-index: 100;
+	}
+	.header ul.nav{
+		padding-left: 100px;
+	}
+	.header ul.nav li{
+		text-align: center;
+		list-style-type: none;
+		display: inline-block;
+		width: 60px;
+	}
+	.header ul.nav li a{
+		text-decoration: none;
+		color: #fff;
+	}
+	.container{
+		position: relative;
+		background: url(images/bg1.png);
+		width: 100%;
+	}
+	.container div.des{
+		width: 1100px;
+		height: 350px;
+		background-color: rgba(255,255,255,0.7);
 		margin: 0px auto;
-		display:block;
-		width: 200px;
+		margin-bottom: 100px;
+		border-radius: 8px;
+		box-shadow: 0px 0px 8px; 
+		margin-top: 100px;
+	}
+	.container div.des div.text{
+		padding: 25px 35px;
+		width: 35%;
+
+	}
+	.des div.text div.title{
+		font-family: "宋体";
+		font-size: 250%;
+		-webkit-box-reflect:below -10px -webkit-linear-gradient(transparent,transparent 40%,rgba(255,255,255,.3));
+	}
+
+	div.self-introduction{
+		width: 800px;
 		height: 200px;
-		border-radius: 110px;
-		border:3px solid #CC9999;
-		background: url(images/github.png) no-repeat;
+		position: absolute;
+		background: rgba(255,255,255,0.8);
+		left: 50%;
+		bottom: 0px;
+		margin-left: -400px;
+		border-top-left-radius: 8px;
+		border-top-right-radius: 8px;
+		text-align: center;
+		padding-top: 10px;
+	}
+	div.self-introduction img{
+		width: 80px;
+		height: 80px;
+		border: 2px outset #fff;
+		border-radius: 60px;
+	}
+	div.self-introduction h3,.self-introduction h4{
+		font-weight: normal;
+		color: #333;
+	}
+	div.pinjie{
+		width: 800px;
+		height: 70px;
+		position: relative;
+		background: rgba(255,255,255,1);
+		left: 50%;
+		top: 0px;
+		margin-left: -400px;
+		border-bottom-left-radius: 8px;
+		border-bottom-right-radius: 8px;
+		text-align: center;
+	}
+	div.pinjie p{
+		padding-top: 20px;
+		margin:0px;
+		color: #333;
 	}
 	</style>
 </head>
 <body>
-<div class="wraper">
-	<div class="header">
-		<div class="welcome">
-			<span>Welcome to </span>
-			<span>tybupt's Blog.</span>
-		</div>
-		<div class="nav">
-			<a href="index.html">首页</a>
-			<a href="book.html">书单</a>
-			<a href="#">简历</a>
-			<a href="contact.html">联系</a>
-		</div>
-	</div>
-	<div class="content">
-		<a href=""></a>
-		<p>ajdsgkljkasdjg</p>
-		<p>jsakdjgsagfdsgdsaggasdg</p>
-		<p>skdjagdasg</p>
+<div class="header">
+	<ul class="nav">
+		<li><a href="">单车</a></li>
+		<li><a href="">电影</a></li>
+		<li><a href="">阅读</a></li>
+		<li><a href="">设计</a></li>
+		<li><a href="">联系</a></li>
+		<li><a href="">随笔</a></li>
+		<li><a href="">关于</a></li>
+	</ul>
+</div>
+<div class="show">
+	<b class="pre"><</b>
+	<b class="next">></b>
+	<ul class="img-list">
+		<li><img src="images/a9.jpg"></li>
+		<li><img src="images/a10.jpg"></li>
+		<li><img src="images/a11.jpg"></li>
+		<li><img src="images/a12.jpg"></li>
+		<li><img src="images/a13.jpg"></li>
+		<li><img src="images/a14.jpg"></li>
+		<li><img src="images/a15.jpg"></li>
+	</ul>
+		<ul class="list">
+			<li class="on"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	<div class="self-introduction">
+		<img src="images/me.jpg">
+		<h3>我爱好旅行、摄影和创造。</h3>
+		<h4>学自己之所想所爱。自由的身心定能使我成为一个一直朝前行走的行者。</h4>
 	</div>
 </div>
+<div class="container">
+	<div class="pinjie">
+		<p>这是我的个人网站，请多指教</p>
+	</div>
+	<div class="des" class="section1">
+		<div class="text">
+			<div class="title">
+				单车
+			</div>
+			<p>单车菜鸟</p><br />
+			<p>dasfsd</p>
+		</div>
+		<div class="pic"></div>
+	</div>
+	<div class="des" class="section2"></div>
+	<div class="des" class="section3"></div>
+	<div class="des" class="section4"></div>
+	<div class="des" class="section5"></div>
+</div>
 <script type="text/javascript" src="javascripts/jquery-1.3.1.js"></script>
-<script type="text/javascript" src="javascripts/main.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("ul.img-list li").children("img").width($(window).width());
+		$("ul.img-list li").children("img").height(0.5*$(window).height());
+		var numImg = $("ul.img-list").children("li").length;
+		var widthImg = $("ul.img-list li").children("img").width();
+		var heightImg = $("ul.img-list li").children("img").height();
+		$("ul.img-list li").css({"width":widthImg,"height":heightImg});
+		$("ul.img-list").css({"width":numImg*widthImg,"height":heightImg});
+		$("div.show").css({"width":widthImg,"height":heightImg});
+
+		var oLi = $("ul.list li");				//所有标号圆圈集合
+		var oImg = $("ul.img-list li img");		//所有图片的集合
+		var i = 0;				//循环用
+		var v_width = $("img").width();		//一张图片的宽度
+		var flag = 0;  //flag表示i递增还是递减
+		
+		//sync保证图片和目录保持一致
+		function sync(){
+				$(oLi[i]).addClass("on").siblings("li").removeClass("on");
+				$("ul.img-list").animate({left : -i*v_width},1000);
+		}				
+		
+		//myFun是循环播放函数
+		function myFun(){			
+			if(i<oLi.length-1 && flag==0){
+				i++;		//必须保证i++必须小于oli.length
+			}
+			else{	
+				flag=1;			
+				i--;
+				if(i<0){		//说明逆序走完，当前停留元素为i=0
+					flag=0;	//开始正序
+					i=1;  //从i=0走到i=1
+				}	
+			}
+			sync();		//图片和当前标号i同步
+		}
+		//每2s变换一张图片
+		var intervalId = setInterval(myFun,4500);		
+		
+		//点击标号图标，展示对应的图片（事件委托到外层ul，冒泡至li）
+		$("ul.list").click(function(e){
+			//取得当前点击的标号，及获取i
+			var index = $(e.target).index();			
+			i=index;	
+			//展示i对应的图片	
+			sync();				
+		});
+
+		//鼠标移至图片上部时，图片停止轮播，移除后，继续轮播
+		oImg.hover(function(e){
+			clearInterval(intervalId);
+			$("div.show b").addClass("display");
+		},function(){
+			intervalId = setInterval(myFun,4500);
+			$("div.show b").removeClass("display");
+		});
+
+		//向前向后图标，移入移出动画
+		$("b").hover(function(){
+			$(this).addClass("on").siblings("b").addClass("display").removeClass("on");
+		},function(){
+			$(this).removeClass("on").removeClass("display").siblings("b").removeClass("display");
+		});
+
+		//点击向前图标，跳到前一张图片，如果前面没有图片，则跳到最后一张图片
+		$("b.pre").click(function(){
+			clearInterval(intervalId);
+			if(i>0){
+				i=i-1;
+			}
+			else{
+				i=oLi.length-1;
+			}
+			sync();
+		});
+
+		//点击向后图标，跳到后一张图片，如果后面没有图片，则跳到第一张图片
+		$("b.next").click(function(){
+			clearInterval(intervalId);
+			if(i<oLi.length-1){
+				i=i+1;
+			}
+			else{
+				i=0;
+			}
+			sync();
+		});
+	});
+</script>
 </body>
 </html>
 
