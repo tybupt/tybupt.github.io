@@ -171,31 +171,32 @@
 	.section2{
 		width: 100%;
 		height: 100%;
-		background-color: #888;
+		background: #fff url(images/tech.jpg) no-repeat 0px 0px;
 	}
 	.section3{
 		width: 100%;
 		height: 100%;
-		background-color: #ccc;
+		background: #ccc url(images/movie1.jpg);
 	}
 	.section4{
 		width: 100%;
 		height: 100%;
-		background-color: #c2b;
+		background: #c2b url(images/bg.png);
 	}
 	.sidebar{
 		position: fixed;
-		width: 190px;
+		width: 150px;
 		height: 175px;
-		right: 0px;
-		top: 50%;
+		left: 0px;
+		top: 40%;
 		margin-top: -88px;
 		display: none;
+		margin-left: 50px;
 	}
 	.sidebar ul{
 		list-style-type: none;
 		margin: 0px;
-		padding: 0px;
+		padding-left: 10px;
 	}
 	.sidebar ul li{
 		line-height: 40px;
@@ -208,7 +209,7 @@
 		border-radius: 8px;
 		width: 10px;
 		height: 10px;
-		margin-left: 7px;
+		margin-right: 7px;
 	}
 	.sidebar ul li span{
 		visibility: hidden;
@@ -240,7 +241,25 @@
 	div.contact a img.unon{
 		-webkit-filter:opacity(0.7);		
 	}
-
+	.section1{
+		position: relative;
+	}
+	.section1 div.content{
+		width: 800px;
+		height: 600px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin-left: -400px;
+		margin-top: -300px;
+		opacity: 0;
+	}
+	.section1 img{
+		float: right;
+	}
+	.section1 div.text{
+		padding: 100px 400px 100px 100px;
+	}
 	</style>
 </head>
 <body>
@@ -299,7 +318,13 @@
 </div>
 <div class="main">
 	<div class="section1">
-		
+		<div class="content">
+			<img src="images/section2-img1.png">
+			<div class="text">
+				<h2 style="font-size:28px; color:#fff; padding:0px; margin:0px;">哈喽</h2>
+				<p style="font-size:8px; color:#fff; padding:0px; margin:0px;">我爱北京天安门</p>
+			</div>			
+		</div>
 	</div>
 	<div class="section2">
 		
@@ -313,10 +338,10 @@
 </div>
 <div class="sidebar">
 	<ul>
-		<li class="on"><span>首页</span></li>
-		<li><span>语音</span></li>
-		<li><span>提醒</span></li>
-		<li><span>场景</span></li>
+		<li class="on"><span>骑行</span></li>
+		<li><span>电影</span></li>
+		<li><span>阅读</span></li>
+		<li><span>美食</span></li>
 	</ul>
 </div>
 <script type="text/javascript" src="javascripts/jquery-1.3.1.js"></script>
@@ -457,6 +482,9 @@
 						}else{
 							$(".sidebar").css("display","none");
 							}
+						if(n==1){
+							$(".section1").children("div.content").animate({"left":"+=100","opacity":"1"},1000);
+						}
 				    });
 		    		$(oLi1[n-1]).addClass("on").siblings("li").removeClass("on");
 				},300);
@@ -467,7 +495,7 @@
 		}//W3C 
 		window.onmousewheel=document.onmousewheel=fun;//IE/Opera/Chrome 
 
-		$(".sidebar ul").children("li").append("<b></b>");
+		$(".sidebar ul").children("li").prepend("<b></b>");
 			oLi1.bind("click",function(e){
 				var index = $(this).index();
 				n=index;
@@ -485,6 +513,9 @@
 			$(this).children("img").removeClass("on");
 			$(this).siblings().children("img").removeClass("unon");
 		});
+
+
+
 	});
 </script>
 </body>
