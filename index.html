@@ -105,17 +105,20 @@
 		display: inline-block;
 		width: 60px;
 		padding: 9px 5px;
-	}
-	.header ul.nav li a{
-		text-decoration: none;
 		color: #fff;
+		cursor: pointer;
 	}
+	/*.header ul.nav li a{
+		text-decoration: none;
+		
+	}*/
 	.header ul.nav li.on{
 		background-color: #fff;
+		color: #000;
 	}
-	.header ul.nav li.on a{
+	/*.header ul.nav li.on a{
 		color: #000;	
-	}
+	}*/
 	.des div.text div.title{
 		font-family: "宋体";
 		font-size: 250%;
@@ -280,13 +283,13 @@
 <div class="home-page">
 	<div class="header">
 		<ul class="nav">
-			<li class="on"><a href="">联系</a></li>
-			<li><a href="">单车</a></li>
-			<li><a href="">设计</a></li>
-			<li><a href="">阅读</a></li>
-			<li><a href="">美食</a></li>
-			<li><a href="">随笔</a></li>
-			<li><a href="">关于</a></li>
+			<li class="on" tagid="0">联系</li>
+			<li tagid="1">单车</li>
+			<li tagid="2">设计</li>
+			<li tagid="3">阅读</li>
+			<li tagid="4">美食</li>
+			<li tagid="5">随笔</li>
+			<li tagid="6">关于</li>
 		</ul>
 	</div>
 	<div class="show">
@@ -502,9 +505,9 @@
 		}//W3C 
 		window.onmousewheel=document.onmousewheel=fun;//IE/Opera/Chrome 
 
-		$(".sidebar ul").children("li").prepend("<b></b>");
 			oLi1.bind("click",function(e){
-				var index = $(this).index();
+				var index = $(this).attr("tagid");
+				alert(index);
 				n=index;
 				$(window).scrollTop(n*windowHeight);
 				$(this).addClass("on").siblings("li").removeClass("on");
