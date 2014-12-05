@@ -100,6 +100,7 @@
 		margin: 0px;
 	}
 	.header ul.nav li{
+		position: relative;
 		text-align: center;
 		list-style-type: none;
 		display: inline-block;
@@ -108,17 +109,22 @@
 		color: #fff;
 		cursor: pointer;
 	}
-	/*.header ul.nav li a{
-		text-decoration: none;
-		
-	}*/
+	.header ul.nav li em{
+		display: none;
+		position: absolute;
+		width: 35px;
+		height: 2px;
+		background-color:#31a3d1; 
+		bottom: 4px;
+		left: 17px;
+	}
+	.header ul.nav li.on em{
+		display: inline-block;
+	}
 	.header ul.nav li.on{
 		background-color: #fff;
 		color: #000;
 	}
-	/*.header ul.nav li.on a{
-		color: #000;	
-	}*/
 	.des div.text div.title{
 		font-family: "宋体";
 		font-size: 250%;
@@ -283,13 +289,13 @@
 <div class="home-page">
 	<div class="header">
 		<ul class="nav">
-			<li class="on" tagid="0">联系</li>
-			<li tagid="1">单车</li>
-			<li tagid="2">设计</li>
-			<li tagid="3">阅读</li>
-			<li tagid="4">美食</li>
-			<li tagid="5">随笔</li>
-			<li tagid="6">关于</li>
+			<li class="on" tagid="0">联系<em class="under-line"></em></li>
+			<li tagid="1">单车<em class="under-line"></em></li>
+			<li tagid="2">设计<em class="under-line"></em></li>
+			<li tagid="3">阅读<em class="under-line"></em></li>
+			<li tagid="4">美食<em class="under-line"></em></li>
+			<li tagid="5">随笔<em class="under-line"></em></li>
+			<li tagid="6">关于<em class="under-line"></em></li>
 		</ul>
 	</div>
 	<div class="show">
@@ -512,10 +518,7 @@
 				$(this).addClass("on").siblings("li").removeClass("on");
 			});
 
-
-
 		$(".contact a").hover(function(){
-			//alert("11");
 			$(this).children("img").addClass("on");
 			$(this).siblings().children("img").addClass("unon");
 		},function(){
