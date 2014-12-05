@@ -444,7 +444,7 @@
 				    	}else{
 				    		n--;
 				    		if(n<0){
-				    			n++;
+				    			n=0;
 				    		}
 				    	}
 				    }else if(e.detail){//Firefox 
@@ -460,7 +460,8 @@
 				    		}
 				    	}    	
 				    } 
-				    $('body').animate({scrollTop: n*windowHeight}, 800);
+				    // $(window).scrollTop(n*windowHeight);
+				   	$('body,html').animate({scrollTop: n*windowHeight}, 800);
 		    		$(oLi1[n]).addClass("on").siblings("li").removeClass("on");
 				},300);
 			};
