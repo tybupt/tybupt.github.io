@@ -271,7 +271,7 @@
 		top: 122px;
 		width: 155px;
 		height: 155px;
-		background: url(images/kjc.jpg);  
+		background: #7a4aa3 url(images/kjc.jpg);  
 		border-radius: 90px;
 	}
 	.section4 .div2{
@@ -279,7 +279,7 @@
 		left: 503px;
 		width: 145px;
 		height: 145px;
-		background: url(images/hsr.jpg);   
+		background-color: #7a4aa3;  
 		border-radius: 80px;
 	}
 	.section4 .div3{
@@ -287,7 +287,7 @@
 		top: 130px;
 		width: 143px;
 		height: 143px;
-		background: url(images/hsr.jpg);  
+		background-color: #f861b9;  
 		border-radius: 80px;
 	}
 	.section4 .div4{
@@ -295,7 +295,7 @@
 		top: 321px;
 		width: 120px;
 		height: 120px;
-		background: url(images/hspg.jpg);  
+		background-color: #5c2090;  
 		border-radius: 70px;
 	}
 	.section4 .div5{
@@ -311,7 +311,7 @@
 		top: 313px;
 		width: 120px;
 		height: 120px;
-		background: url(images/hspg.jpg);  
+		background-color: #606060;
 		border-radius: 70px;
 	}
 	.section4 .div7{
@@ -319,7 +319,7 @@
 		top: 305px;
 		width: 125px;
 		height: 125px;
-		background: url(images/lbyrt.jpg);
+		background-color: #5c2090;
 		border-radius: 70px;
 	}
 	.section4 .div8{
@@ -327,7 +327,7 @@
 		top: 433px;
 		width: 125px;
 		height: 125px;
-		background: url(images/lbyrt.jpg);
+		background-color: #9773b6;
 		border-radius: 70px;
 	}
 	.section4 .div9{
@@ -335,7 +335,7 @@
 		top: 560px;
 		width: 120px;
 		height: 120px;
-		background: url(images/hspg.jpg);
+		background-color: #fb32a7;
 		border-radius: 70px;
 	}
 	.section4 .div10{
@@ -343,7 +343,7 @@
 		top: 567px;
 		width: 143px;
 		height: 143px;
-		background: url(images/hsr.jpg);
+		background-color: #000;
 		border-radius: 80px;
 	}
 	.section4 .div11{
@@ -351,7 +351,7 @@
 		top: 475px;
 		width: 150px;
 		height: 150px;
-		background: url(images/kjc.jpg);  
+		background-color: #f861b9;
 		border-radius: 90px;
 	}
 	.section4 .div12{
@@ -426,83 +426,6 @@
 		height: 30%;
 		margin:	-10% auto;
 	}
-	.section .cookbook{
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		left: 0px;
-		top: 0px;
-		background:rgba(100,100,100,0.9);
-		z-index: 100;
-		padding: 40px 0px;
-		color: #fff;
-		/*overflow: auto;*/
-		display: none;
-		transition:display 1500;
-	}
-	.section .cookbook div.menu{
-		width: 1000px;
-		margin: 0px auto;
-		padding: 30px 50px;
-		overflow: hidden;
-	}
-	.section .cookbook div.menu div.img{
-		padding-top: 30px;
-		width: 350px;
-		height: 233px;
-		border-radius: 3px;
-		overflow: hidden;
-	}
-	.section .cookbook div.menu div.img img{
-		width: 350px;
-		height: auto;
-	}
-	.section .cookbook div.menu div.cook-step{
-		float: right;
-		width: 600px;
-		height: 100%;
-		overflow: auto;
-	}
-	
-	.section .cookbook div.menu div.cook-step h2,h4{
-		color: #FFCC99;
-		font-weight: normal;
-	}
-	.section .cookbook div.menu div.cook-step li{
-		line-height: 30px;
-	}
-	.section .cookbook div.menu div.cook-step div.tips{
-		background-color: rgba(70,70,70,0.6);
-		padding: 10px;
-		border-radius: 4px;
-	}
-	.section4 .coverage{
-		width: 100%;
-		height: 100%;
-		background-color: #000;
-		color: #fff;
-		position: absolute;
-		z-index: 200;
-	}
-	.section4 .coverage p{
-		width: 540px;
-		height: 80px;
-		position: absolute;
-		left: 50%;
-		top: 40%;
-		margin-left: -200px;
-		font-size: 200%;
-		opacity: 0;
-	}
-	.cookbook div.exit{
-		position: absolute;
-		right: 10%;
-		top: 10%;
-		background-color: rgba(204,51,102,0.9);
-		cursor: pointer;
-		border-radius: 8px;
-		padding: 5px;
-	}
 	</style>
 </head>
 <body>
@@ -575,78 +498,47 @@
 		
 	</div>
 	<div class="section section4">
-	<div class="coverage"><p>不断探索美食的吃货才是合格的吃货</p></div>
-		<div class="cookbook">
-			<div class="exit">更换菜单</div>
-			<div class="menu">
-				<div class="cook-step">
-					<h2>简介</h2>
-					<p>	我又吃到了那肥而不腻的美味。红烧肉易做，但是做的好吃让人一记能记三年的，可真是不容易哦。快来学学捞面妈的秘诀吧！！</p>
-					<h2>用料</h2>
-					<p>五花肉，八角，豆瓣酱</p>
-					<h2>做法</h2>
-					<ol class="step">
-						<li>五花肉洗净去毛切小块，放在开水里汆烫，然后倒出，冲冷水至完全冷却</li>
-						<li>烧开水，然后再将小块的五花肉放入开水里汆烫，然后倒出冲冷水至完全冷却</li>
-						<li>在炒锅里放少许的油、爆香蒜蓉，加入小块五花肉，翻炒至肉块表面有些微焦，然后加入适量的生抽、糖、老抽和水，焖20-30分钟，然后熄火</li>
-						<li>待锅里的肉完全冷却，加入要同焖的东西，例如鸡蛋，土豆...加水再焖一次，约20-30分钟即可</li>
-					</ol>
-					<div class="tips">
-						<h4>小贴士</h2>
-						<ul class="tip" style="list-style-type:none;">
-							<li>秘诀1、反复白水煮五花肉，然后冷水冷却，其实是去掉五花肉里的肥腻；</li>
-							<li>秘诀2、分两次焖煮五花肉，其实是为了避免五花肉中的瘦肉部分经过反复焖煮而变硬，生渣。</li>
-							<li>五花肉最喜欢买超市分装好的‘精华版’，每条五花肉最精华的部分都在这里了，肥瘦均匀，一层又一层。2.我汆烫了2遍，因为肉很均匀，如果买的肥肉多的话，可以汆烫三遍，整条肉汆一遍水，再切小块，接着汆烫2遍。</li>
-							<li>出锅前试试味道，不够味的话加盐调味。酱油越煮越浓，一开始不要放太多老抽，不然收汁之后颜色会太深。</li>
-						</ul>
-					</div>
-					
-
-				</div>
-				<div class="img"><img src="images/food2.jpg"></div>
+		<div class="nei">
+			<div class="div1">
+			</div>
+			<div class="div2">
+			</div>
+			<div class="div3">
+			</div>
+			<div class="div4">
+			</div>
+			<div class="div5">
+				<span class="text">不断探索美食的吃货才是合格的吃货</span>
+			</div>
+			<div class="div6">
+			</div>
+			<div class="div7">
+			</div>
+			<div class="div8">
+			</div>
+			<div class="div9">
+			</div>
+			<div class="div10">
+			</div>
+			<div class="div11">
+			</div>
+			<div class="div12">
+			</div>
+			<div class="div13">
+			</div>
+			<div class="div14">
+			</div>
+			<div class="div15">
+			</div>
+			<div class="div16">
+			</div>
+			<div class="div17">
+			</div>
+			<div class="div18">
+			</div>
+			<div class="div19">
 			</div>
 		</div>
-			<div class="nei">
-				<div class="div1">
-				</div>
-				<div class="div2">
-				</div>
-				<div class="div3">
-				</div>
-				<div class="div4">
-				</div>
-				<div class="div5">
-					<span class="text">不断探索美食的吃货才是合格的吃货</span>
-				</div>
-				<div class="div6">
-				</div>
-				<div class="div7">
-				</div>
-				<div class="div8">
-				</div>
-				<div class="div9">
-				</div>
-				<div class="div10">
-				</div>
-				<div class="div11">
-				</div>
-				<div class="div12">
-				</div>
-				<div class="div13">
-				</div>
-				<div class="div14">
-				</div>
-				<div class="div15">
-				</div>
-				<div class="div16">
-				</div>
-				<div class="div17">
-				</div>
-				<div class="div18">
-				</div>
-				<div class="div19">
-				</div>
-			</div>
 	</div>
 	<div class="section section5">
 		
@@ -662,7 +554,7 @@
 		if($(window).height()>1100){
 			$("ul.img-list li").children("img").height(0.5*$(window).height());
 		}else{
-			$("ul.img-list li").children("img").height("500px");
+			$("ul.img-list li").children("img").height("550px");
 		}		
 		var numImg = $("ul.img-list").children("li").length;
 		var widthImg = $("ul.img-list li").children("img").width();
@@ -787,13 +679,8 @@
 				    		}
 				    	}    	
 				    } 
-				   	$('body,html').animate({scrollTop: n*windowHeight}, 800,function(){
-				   		if($(window).scrollTop()==4*windowHeight){
-				   			$(".section4 .coverage").children("p").animate({"opacity":"1"},1000,function(){
-				   				$(".section4 .coverage").slideUp(1000);
-				   			});
-				   		}
-				   	});
+				    // $(window).scrollTop(n*windowHeight);
+				   	$('body,html').animate({scrollTop: n*windowHeight}, 800);
 		    		$(oLi1[n]).addClass("on").siblings("li").removeClass("on");
 				},300);
 			};
@@ -806,11 +693,6 @@
 			oLi1.bind("click",function(e){
 				var index = $(this).attr("tagid");
 				n=index;
-				if(n==4){
-					$(".section4 .coverage").children("p").animate({"opacity":"1"},1000,function(){
-				   				$(".section4 .coverage").slideUp(1000);
-				   			});
-				}
 				$(window).scrollTop(n*windowHeight);
 				$(this).addClass("on").siblings("li").removeClass("on");
 			});
@@ -821,15 +703,6 @@
 		},function(){
 			$(this).children("img").removeClass("on");
 			$(this).siblings().children("img").removeClass("unon");
-		});
-
-
-		$(".section4 .nei").children("div").click(function(){
-			$("div.cookbook").slideDown(500);
-		});
-
-		$(".section4 .cookbook").children("div.exit").click(function(){
-			$("div.cookbook").slideUp(500);
 		});
 	});
 </script>
