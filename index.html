@@ -90,7 +90,7 @@
 		left: 0px;
 		top: 0px;
 		width: 100%;
-		z-index: 100;
+		z-index: 1000;
 	}
 	.header ul.nav{
 		padding-left: 50px;
@@ -287,7 +287,7 @@
 		top: 130px;
 		width: 143px;
 		height: 143px;
-		background: url(images/hsr.jpg);  
+		background: url(images/ymdx.jpg);  
 		border-radius: 80px;
 	}
 	.section4 .div4{
@@ -311,7 +311,7 @@
 		top: 313px;
 		width: 120px;
 		height: 120px;
-		background: url(images/hspg.jpg);  
+		background: url(images/hgr.jpg);  
 		border-radius: 70px;
 	}
 	.section4 .div7{
@@ -327,7 +327,7 @@
 		top: 433px;
 		width: 125px;
 		height: 125px;
-		background: url(images/lbyrt.jpg);
+		background: url(images/mckr.jpg);
 		border-radius: 70px;
 	}
 	.section4 .div9{
@@ -335,7 +335,7 @@
 		top: 560px;
 		width: 120px;
 		height: 120px;
-		background: url(images/hspg.jpg);
+		background: url(images/xhsdnn.jpg);
 		border-radius: 70px;
 	}
 	.section4 .div10{
@@ -343,23 +343,16 @@
 		top: 567px;
 		width: 143px;
 		height: 143px;
-		background: url(images/hsr.jpg);
+		background: url(images/hsy.jpg);
 		border-radius: 80px;
 	}
-	.section4 .div11{
-		left: 908px;
-		top: 475px;
-		width: 150px;
-		height: 150px;
-		background: url(images/kjc.jpg);  
-		border-radius: 90px;
-	}
+	
 	.section4 .div12{
 		left: 409px;
 		top: 242px;
 		width: 66px;
 		height: 66px;
-		background-color: #f861b9;
+		background: url(images/hddt.jpg);
 		border-radius: 40px;
 	}
 	.section4 .div13{
@@ -367,7 +360,7 @@
 		top: 214px;
 		width: 66px;
 		height: 66px;
-		background-color: #f861b9;
+		background: url(images/szxq.jpg);
 		border-radius: 40px;
 	}
 	.section4 .div14{
@@ -375,7 +368,7 @@
 		top: 337px;
 		width: 66px;
 		height: 66px;
-		background-color: #f861b9;
+		background: url(images/bpyb.jpg);
 		border-radius: 40px;
 	}
 	.section4 .div15{
@@ -383,7 +376,7 @@
 		top: 323px;
 		width: 66px;
 		height: 66px;
-		background-color: #f861b9;
+		background: url(images/ymbg.jpg);
 		border-radius: 40px;
 	}
 	.section4 .div16{
@@ -391,7 +384,7 @@
 		top: 493px;
 		width: 66px;
 		height: 66px;
-		background-color: #f861b9;
+		background: url(images/bdg.jpg);
 		border-radius: 40px;
 	}
 	.section4 .div17{
@@ -399,7 +392,7 @@
 		top: 502px;
 		width: 66px;
 		height: 66px;
-		background-color: #f861b9;
+		background: url(images/bshs.jpg);
 		border-radius: 40px;
 	}
 	.section4 .div18{
@@ -407,7 +400,7 @@
 		top: 475px;
 		width: 150px;
 		height: 150px;
-		background-color: #f861b9;
+		background: url(images/hszt.jpg);
 		border-radius: 90px;
 	}
 	.section4 .div19{
@@ -415,7 +408,7 @@
 		top: 674px;
 		width: 66px;
 		height: 66px;
-		background-color: #f861b9;
+		background: url(images/dt.jpg);
 		border-radius: 40px;
 	}
 	.section4 div span.text{
@@ -426,9 +419,9 @@
 		height: 30%;
 		margin:	-10% auto;
 	}
-	.section .cookbook{
+	.section4 .cookbook{
 		width: 100%;
-		height: 100%;
+		height: auto;
 		position: absolute;
 		left: 0px;
 		top: 0px;
@@ -436,15 +429,16 @@
 		z-index: 100;
 		padding: 40px 0px;
 		color: #fff;
-		/*overflow: auto;*/
+		overflow: auto;
 		display: none;
 		transition:display 1500;
 	}
-	.section .cookbook div.menu{
+	.section4 .cookbook div.menu{
 		width: 1000px;
 		margin: 0px auto;
 		padding: 30px 50px;
 		overflow: hidden;
+		display: block;
 	}
 	.section .cookbook div.menu div.img{
 		padding-top: 30px;
@@ -502,6 +496,9 @@
 		cursor: pointer;
 		border-radius: 8px;
 		padding: 5px;
+	}
+	.section4 div div.menu{
+		display: none;
 	}
 	</style>
 </head>
@@ -575,76 +572,473 @@
 		
 	</div>
 	<div class="section section4">
-	<div class="coverage"><p>不断探索美食的吃货才是合格的吃货</p></div>
+	<div class="coverage"><p id="text">不断探索美食的吃货才是合格的吃货</p></div>
 		<div class="cookbook">
 			<div class="exit">更换菜单</div>
-			<div class="menu">
-				<div class="cook-step">
-					<h2>简介</h2>
-					<p>	我又吃到了那肥而不腻的美味。红烧肉易做，但是做的好吃让人一记能记三年的，可真是不容易哦。快来学学捞面妈的秘诀吧！！</p>
-					<h2>用料</h2>
-					<p>五花肉，八角，豆瓣酱</p>
-					<h2>做法</h2>
-					<ol class="step">
-						<li>五花肉洗净去毛切小块，放在开水里汆烫，然后倒出，冲冷水至完全冷却</li>
-						<li>烧开水，然后再将小块的五花肉放入开水里汆烫，然后倒出冲冷水至完全冷却</li>
-						<li>在炒锅里放少许的油、爆香蒜蓉，加入小块五花肉，翻炒至肉块表面有些微焦，然后加入适量的生抽、糖、老抽和水，焖20-30分钟，然后熄火</li>
-						<li>待锅里的肉完全冷却，加入要同焖的东西，例如鸡蛋，土豆...加水再焖一次，约20-30分钟即可</li>
-					</ol>
-					<div class="tips">
-						<h4>小贴士</h2>
-						<ul class="tip" style="list-style-type:none;">
-							<li>秘诀1、反复白水煮五花肉，然后冷水冷却，其实是去掉五花肉里的肥腻；</li>
-							<li>秘诀2、分两次焖煮五花肉，其实是为了避免五花肉中的瘦肉部分经过反复焖煮而变硬，生渣。</li>
-							<li>五花肉最喜欢买超市分装好的‘精华版’，每条五花肉最精华的部分都在这里了，肥瘦均匀，一层又一层。2.我汆烫了2遍，因为肉很均匀，如果买的肥肉多的话，可以汆烫三遍，整条肉汆一遍水，再切小块，接着汆烫2遍。</li>
-							<li>出锅前试试味道，不够味的话加盐调味。酱油越煮越浓，一开始不要放太多老抽，不然收汁之后颜色会太深。</li>
-						</ul>
-					</div>
-					
-
-				</div>
-				<div class="img"><img src="images/food2.jpg"></div>
-			</div>
+			
 		</div>
 			<div class="nei">
-				<div class="div1">
+				<div class="div1 foods">
+					<div class="menu">
+						<div class="cook-step">
+							<h2>简介</h2>
+							<p>	我又吃到了那肥而不腻的美味。红烧肉易做，但是做的好吃让人一记能记三年的，可真是不容易哦。快来学学捞面妈的秘诀吧！！</p>
+							<h2>用料</h2>
+							<p>蒜片，洋葱碎，鸡翅，新奥尔良烤翅粉</p>
+							<h2>做法</h2>
+							<ol class="step">
+								<li>鸡翅洗净，在鸡翅上划两刀或者用牙签扎几个孔，让鸡翅入味</li>
+								<li>鸡翅用自制的新奥尔良烤鸡酱料腌制12小时</li>
+								<li>将腌制好的鸡翅摆在烤网上，用刷子刷一层酱料，再刷一层蜂蜜水，鸡翅尖用锡纸包上</li>
+								<li>烤箱预热后，鸡翅放到烤箱中层230摄氏度烤13分钟，烤盘铺上锡纸放在下层接油</li>
+								<li>分钟后将鸡翅取出翻面，再刷一层酱料和蜂蜜水，再入烤箱烤7分钟</li>
+								<li>然后取下锡纸，再烤3分钟即可</li>
+							</ol>
+							<div class="tips">
+								<h4>小贴士</h2>
+								<ul class="tip" style="list-style-type:none;">
+									<li>鸡翅尖要用锡纸包上，以免肉厚的地方还没有烤熟，翅尖的已经烤糊了。</li>
+									<li>烤制的过程中，下层接油的烤盘要铺上锡纸，因为料汁滴在烤盘上会碳化不好清理。</li>
+								</ul>
+							</div>
+						</div>
+						<div class="img"><img src="images/food1.jpg"></div>
+					</div>
 				</div>
-				<div class="div2">
+				<div class="div2  foods">
+					<div class="menu">
+						<div class="cook-step">
+							<h2>简介</h2>
+							<p>	我又吃到了那肥而不腻的美味。红烧肉易做，但是做的好吃让人一记能记三年的，可真是不容易哦。快来学学捞面妈的秘诀吧！！</p>
+							<h2>用料</h2>
+							<p>五花肉，八角，豆瓣酱</p>
+							<h2>做法</h2>
+							<ol class="step">
+								<li>五花肉洗净去毛切小块，放在开水里汆烫，然后倒出，冲冷水至完全冷却</li>
+								<li>烧开水，然后再将小块的五花肉放入开水里汆烫，然后倒出冲冷水至完全冷却</li>
+								<li>在炒锅里放少许的油、爆香蒜蓉，加入小块五花肉，翻炒至肉块表面有些微焦，然后加入适量的生抽、糖、老抽和水，焖20-30分钟，然后熄火</li>
+								<li>待锅里的肉完全冷却，加入要同焖的东西，例如鸡蛋，土豆...加水再焖一次，约20-30分钟即可</li>
+							</ol>
+							<div class="tips">
+								<h4>小贴士</h2>
+								<ul class="tip" style="list-style-type:none;">
+									<li>秘诀1、反复白水煮五花肉，然后冷水冷却，其实是去掉五花肉里的肥腻；</li>
+									<li>秘诀2、分两次焖煮五花肉，其实是为了避免五花肉中的瘦肉部分经过反复焖煮而变硬，生渣。</li>
+									<li>五花肉最喜欢买超市分装好的‘精华版’，每条五花肉最精华的部分都在这里了，肥瘦均匀，一层又一层。2.我汆烫了2遍，因为肉很均匀，如果买的肥肉多的话，可以汆烫三遍，整条肉汆一遍水，再切小块，接着汆烫2遍。</li>
+									<li>出锅前试试味道，不够味的话加盐调味。酱油越煮越浓，一开始不要放太多老抽，不然收汁之后颜色会太深。</li>
+								</ul>
+							</div>
+						</div>
+						<div class="img"><img src="images/food2.jpg"></div>
+					</div>
 				</div>
-				<div class="div3">
+				<div class="div3  foods">
+					<div class="menu">
+						<div class="cook-step">
+							<h2>简介</h2>
+							<p>	我又吃到了那肥而不腻的美味。红烧肉易做，但是做的好吃让人一记能记三年的，可真是不容易哦。快来学学捞面妈的秘诀吧！！</p>
+							<h2>用料</h2>
+							<p>蒜片，洋葱碎，鸡翅，新奥尔良烤翅粉</p>
+							<h2>做法</h2>
+							<ol class="step">
+								<li>鸡翅洗净，在鸡翅上划两刀或者用牙签扎几个孔，让鸡翅入味</li>
+								<li>鸡翅用自制的新奥尔良烤鸡酱料腌制12小时</li>
+								<li>将腌制好的鸡翅摆在烤网上，用刷子刷一层酱料，再刷一层蜂蜜水，鸡翅尖用锡纸包上</li>
+								<li>烤箱预热后，鸡翅放到烤箱中层230摄氏度烤13分钟，烤盘铺上锡纸放在下层接油</li>
+								<li>分钟后将鸡翅取出翻面，再刷一层酱料和蜂蜜水，再入烤箱烤7分钟</li>
+								<li>然后取下锡纸，再烤3分钟即可</li>
+							</ol>
+							<div class="tips">
+								<h4>小贴士</h2>
+								<ul class="tip" style="list-style-type:none;">
+									<li>鸡翅尖要用锡纸包上，以免肉厚的地方还没有烤熟，翅尖的已经烤糊了。</li>
+									<li>烤制的过程中，下层接油的烤盘要铺上锡纸，因为料汁滴在烤盘上会碳化不好清理。</li>
+								</ul>
+							</div>
+						</div>
+						<div class="img"><img src="images/food3.jpg"></div>
+					</div>
 				</div>
-				<div class="div4">
+				<div class="div4  foods">
+					<div class="menu">
+						<div class="cook-step">
+							<h2>简介</h2>
+							<p>	我又吃到了那肥而不腻的美味。红烧肉易做，但是做的好吃让人一记能记三年的，可真是不容易哦。快来学学捞面妈的秘诀吧！！</p>
+							<h2>用料</h2>
+							<p>蒜片，洋葱碎，鸡翅，新奥尔良烤翅粉</p>
+							<h2>做法</h2>
+							<ol class="step">
+								<li>鸡翅洗净，在鸡翅上划两刀或者用牙签扎几个孔，让鸡翅入味</li>
+								<li>鸡翅用自制的新奥尔良烤鸡酱料腌制12小时</li>
+								<li>将腌制好的鸡翅摆在烤网上，用刷子刷一层酱料，再刷一层蜂蜜水，鸡翅尖用锡纸包上</li>
+								<li>烤箱预热后，鸡翅放到烤箱中层230摄氏度烤13分钟，烤盘铺上锡纸放在下层接油</li>
+								<li>分钟后将鸡翅取出翻面，再刷一层酱料和蜂蜜水，再入烤箱烤7分钟</li>
+								<li>然后取下锡纸，再烤3分钟即可</li>
+							</ol>
+							<div class="tips">
+								<h4>小贴士</h2>
+								<ul class="tip" style="list-style-type:none;">
+									<li>鸡翅尖要用锡纸包上，以免肉厚的地方还没有烤熟，翅尖的已经烤糊了。</li>
+									<li>烤制的过程中，下层接油的烤盘要铺上锡纸，因为料汁滴在烤盘上会碳化不好清理。</li>
+								</ul>
+							</div>
+						</div>
+						<div class="img"><img src="images/food4.jpg"></div>
+					</div>
 				</div>
-				<div class="div5">
+				<div class="div5 foods">
 					<span class="text">不断探索美食的吃货才是合格的吃货</span>
 				</div>
-				<div class="div6">
+				<div class="div6 foods">
+									<div class="menu">
+						<div class="cook-step">
+							<h2>简介</h2>
+							<p>	我又吃到了那肥而不腻的美味。红烧肉易做，但是做的好吃让人一记能记三年的，可真是不容易哦。快来学学捞面妈的秘诀吧！！</p>
+							<h2>用料</h2>
+							<p>蒜片，洋葱碎，鸡翅，新奥尔良烤翅粉</p>
+							<h2>做法</h2>
+							<ol class="step">
+								<li>鸡翅洗净，在鸡翅上划两刀或者用牙签扎几个孔，让鸡翅入味</li>
+								<li>鸡翅用自制的新奥尔良烤鸡酱料腌制12小时</li>
+								<li>将腌制好的鸡翅摆在烤网上，用刷子刷一层酱料，再刷一层蜂蜜水，鸡翅尖用锡纸包上</li>
+								<li>烤箱预热后，鸡翅放到烤箱中层230摄氏度烤13分钟，烤盘铺上锡纸放在下层接油</li>
+								<li>分钟后将鸡翅取出翻面，再刷一层酱料和蜂蜜水，再入烤箱烤7分钟</li>
+								<li>然后取下锡纸，再烤3分钟即可</li>
+							</ol>
+							<div class="tips">
+								<h4>小贴士</h2>
+								<ul class="tip" style="list-style-type:none;">
+									<li>鸡翅尖要用锡纸包上，以免肉厚的地方还没有烤熟，翅尖的已经烤糊了。</li>
+									<li>烤制的过程中，下层接油的烤盘要铺上锡纸，因为料汁滴在烤盘上会碳化不好清理。</li>
+								</ul>
+							</div>
+						</div>
+						<div class="img"><img src="images/food6.jpg"></div>
+					</div>
 				</div>
-				<div class="div7">
+				<div class="div7 foods">
+									<div class="menu">
+						<div class="cook-step">
+							<h2>简介</h2>
+							<p>	我又吃到了那肥而不腻的美味。红烧肉易做，但是做的好吃让人一记能记三年的，可真是不容易哦。快来学学捞面妈的秘诀吧！！</p>
+							<h2>用料</h2>
+							<p>蒜片，洋葱碎，鸡翅，新奥尔良烤翅粉</p>
+							<h2>做法</h2>
+							<ol class="step">
+								<li>鸡翅洗净，在鸡翅上划两刀或者用牙签扎几个孔，让鸡翅入味</li>
+								<li>鸡翅用自制的新奥尔良烤鸡酱料腌制12小时</li>
+								<li>将腌制好的鸡翅摆在烤网上，用刷子刷一层酱料，再刷一层蜂蜜水，鸡翅尖用锡纸包上</li>
+								<li>烤箱预热后，鸡翅放到烤箱中层230摄氏度烤13分钟，烤盘铺上锡纸放在下层接油</li>
+								<li>分钟后将鸡翅取出翻面，再刷一层酱料和蜂蜜水，再入烤箱烤7分钟</li>
+								<li>然后取下锡纸，再烤3分钟即可</li>
+							</ol>
+							<div class="tips">
+								<h4>小贴士</h2>
+								<ul class="tip" style="list-style-type:none;">
+									<li>鸡翅尖要用锡纸包上，以免肉厚的地方还没有烤熟，翅尖的已经烤糊了。</li>
+									<li>烤制的过程中，下层接油的烤盘要铺上锡纸，因为料汁滴在烤盘上会碳化不好清理。</li>
+								</ul>
+							</div>
+						</div>
+						<div class="img"><img src="images/food7.jpg"></div>
+					</div>
 				</div>
-				<div class="div8">
+				<div class="div8 foods">
+									<div class="menu">
+						<div class="cook-step">
+							<h2>简介</h2>
+							<p>	我又吃到了那肥而不腻的美味。红烧肉易做，但是做的好吃让人一记能记三年的，可真是不容易哦。快来学学捞面妈的秘诀吧！！</p>
+							<h2>用料</h2>
+							<p>蒜片，洋葱碎，鸡翅，新奥尔良烤翅粉</p>
+							<h2>做法</h2>
+							<ol class="step">
+								<li>鸡翅洗净，在鸡翅上划两刀或者用牙签扎几个孔，让鸡翅入味</li>
+								<li>鸡翅用自制的新奥尔良烤鸡酱料腌制12小时</li>
+								<li>将腌制好的鸡翅摆在烤网上，用刷子刷一层酱料，再刷一层蜂蜜水，鸡翅尖用锡纸包上</li>
+								<li>烤箱预热后，鸡翅放到烤箱中层230摄氏度烤13分钟，烤盘铺上锡纸放在下层接油</li>
+								<li>分钟后将鸡翅取出翻面，再刷一层酱料和蜂蜜水，再入烤箱烤7分钟</li>
+								<li>然后取下锡纸，再烤3分钟即可</li>
+							</ol>
+							<div class="tips">
+								<h4>小贴士</h2>
+								<ul class="tip" style="list-style-type:none;">
+									<li>鸡翅尖要用锡纸包上，以免肉厚的地方还没有烤熟，翅尖的已经烤糊了。</li>
+									<li>烤制的过程中，下层接油的烤盘要铺上锡纸，因为料汁滴在烤盘上会碳化不好清理。</li>
+								</ul>
+							</div>
+						</div>
+						<div class="img"><img src="images/food8.jpg"></div>
+					</div>
 				</div>
-				<div class="div9">
+				<div class="div9 foods">
+									<div class="menu">
+						<div class="cook-step">
+							<h2>简介</h2>
+							<p>	我又吃到了那肥而不腻的美味。红烧肉易做，但是做的好吃让人一记能记三年的，可真是不容易哦。快来学学捞面妈的秘诀吧！！</p>
+							<h2>用料</h2>
+							<p>蒜片，洋葱碎，鸡翅，新奥尔良烤翅粉</p>
+							<h2>做法</h2>
+							<ol class="step">
+								<li>鸡翅洗净，在鸡翅上划两刀或者用牙签扎几个孔，让鸡翅入味</li>
+								<li>鸡翅用自制的新奥尔良烤鸡酱料腌制12小时</li>
+								<li>将腌制好的鸡翅摆在烤网上，用刷子刷一层酱料，再刷一层蜂蜜水，鸡翅尖用锡纸包上</li>
+								<li>烤箱预热后，鸡翅放到烤箱中层230摄氏度烤13分钟，烤盘铺上锡纸放在下层接油</li>
+								<li>分钟后将鸡翅取出翻面，再刷一层酱料和蜂蜜水，再入烤箱烤7分钟</li>
+								<li>然后取下锡纸，再烤3分钟即可</li>
+							</ol>
+							<div class="tips">
+								<h4>小贴士</h2>
+								<ul class="tip" style="list-style-type:none;">
+									<li>鸡翅尖要用锡纸包上，以免肉厚的地方还没有烤熟，翅尖的已经烤糊了。</li>
+									<li>烤制的过程中，下层接油的烤盘要铺上锡纸，因为料汁滴在烤盘上会碳化不好清理。</li>
+								</ul>
+							</div>
+						</div>
+						<div class="img"><img src="images/food9.jpg"></div>
+					</div>
 				</div>
-				<div class="div10">
-				</div>
-				<div class="div11">
+				<div class="div10 foods">
+					<div class="menu">
+						<div class="cook-step">
+							<h2>简介</h2>
+							<p>	我又吃到了那肥而不腻的美味。红烧肉易做，但是做的好吃让人一记能记三年的，可真是不容易哦。快来学学捞面妈的秘诀吧！！</p>
+							<h2>用料</h2>
+							<p>蒜片，洋葱碎，鸡翅，新奥尔良烤翅粉</p>
+							<h2>做法</h2>
+							<ol class="step">
+								<li>鸡翅洗净，在鸡翅上划两刀或者用牙签扎几个孔，让鸡翅入味</li>
+								<li>鸡翅用自制的新奥尔良烤鸡酱料腌制12小时</li>
+								<li>将腌制好的鸡翅摆在烤网上，用刷子刷一层酱料，再刷一层蜂蜜水，鸡翅尖用锡纸包上</li>
+								<li>烤箱预热后，鸡翅放到烤箱中层230摄氏度烤13分钟，烤盘铺上锡纸放在下层接油</li>
+								<li>分钟后将鸡翅取出翻面，再刷一层酱料和蜂蜜水，再入烤箱烤7分钟</li>
+								<li>然后取下锡纸，再烤3分钟即可</li>
+							</ol>
+							<div class="tips">
+								<h4>小贴士</h2>
+								<ul class="tip" style="list-style-type:none;">
+									<li>鸡翅尖要用锡纸包上，以免肉厚的地方还没有烤熟，翅尖的已经烤糊了。</li>
+									<li>烤制的过程中，下层接油的烤盘要铺上锡纸，因为料汁滴在烤盘上会碳化不好清理。</li>
+								</ul>
+							</div>
+						</div>
+						<div class="img"><img src="images/food10.jpg"></div>
+					</div>
 				</div>
 				<div class="div12">
+					<div class="menu">
+						<div class="cook-step">
+							<h2>简介</h2>
+							<p>	我又吃到了那肥而不腻的美味。红烧肉易做，但是做的好吃让人一记能记三年的，可真是不容易哦。快来学学捞面妈的秘诀吧！！</p>
+							<h2>用料</h2>
+							<p>蒜片，洋葱碎，鸡翅，新奥尔良烤翅粉</p>
+							<h2>做法</h2>
+							<ol class="step">
+								<li>鸡翅洗净，在鸡翅上划两刀或者用牙签扎几个孔，让鸡翅入味</li>
+								<li>鸡翅用自制的新奥尔良烤鸡酱料腌制12小时</li>
+								<li>将腌制好的鸡翅摆在烤网上，用刷子刷一层酱料，再刷一层蜂蜜水，鸡翅尖用锡纸包上</li>
+								<li>烤箱预热后，鸡翅放到烤箱中层230摄氏度烤13分钟，烤盘铺上锡纸放在下层接油</li>
+								<li>分钟后将鸡翅取出翻面，再刷一层酱料和蜂蜜水，再入烤箱烤7分钟</li>
+								<li>然后取下锡纸，再烤3分钟即可</li>
+							</ol>
+							<div class="tips">
+								<h4>小贴士</h2>
+								<ul class="tip" style="list-style-type:none;">
+									<li>鸡翅尖要用锡纸包上，以免肉厚的地方还没有烤熟，翅尖的已经烤糊了。</li>
+									<li>烤制的过程中，下层接油的烤盘要铺上锡纸，因为料汁滴在烤盘上会碳化不好清理。</li>
+								</ul>
+							</div>
+						</div>
+						<div class="img"><img src="images/food12.jpg"></div>
+					</div>
 				</div>
-				<div class="div13">
+				<div class="div13 foods">
+					<div class="menu">
+						<div class="cook-step">
+							<h2>简介</h2>
+							<p>	我又吃到了那肥而不腻的美味。红烧肉易做，但是做的好吃让人一记能记三年的，可真是不容易哦。快来学学捞面妈的秘诀吧！！</p>
+							<h2>用料</h2>
+							<p>蒜片，洋葱碎，鸡翅，新奥尔良烤翅粉</p>
+							<h2>做法</h2>
+							<ol class="step">
+								<li>鸡翅洗净，在鸡翅上划两刀或者用牙签扎几个孔，让鸡翅入味</li>
+								<li>鸡翅用自制的新奥尔良烤鸡酱料腌制12小时</li>
+								<li>将腌制好的鸡翅摆在烤网上，用刷子刷一层酱料，再刷一层蜂蜜水，鸡翅尖用锡纸包上</li>
+								<li>烤箱预热后，鸡翅放到烤箱中层230摄氏度烤13分钟，烤盘铺上锡纸放在下层接油</li>
+								<li>分钟后将鸡翅取出翻面，再刷一层酱料和蜂蜜水，再入烤箱烤7分钟</li>
+								<li>然后取下锡纸，再烤3分钟即可</li>
+							</ol>
+							<div class="tips">
+								<h4>小贴士</h2>
+								<ul class="tip" style="list-style-type:none;">
+									<li>鸡翅尖要用锡纸包上，以免肉厚的地方还没有烤熟，翅尖的已经烤糊了。</li>
+									<li>烤制的过程中，下层接油的烤盘要铺上锡纸，因为料汁滴在烤盘上会碳化不好清理。</li>
+								</ul>
+							</div>
+						</div>
+						<div class="img"><img src="images/food13.jpg"></div>
+					</div>
 				</div>
-				<div class="div14">
+				<div class="div14 foods">
+					<div class="menu">
+						<div class="cook-step">
+							<h2>简介</h2>
+							<p>	我又吃到了那肥而不腻的美味。红烧肉易做，但是做的好吃让人一记能记三年的，可真是不容易哦。快来学学捞面妈的秘诀吧！！</p>
+							<h2>用料</h2>
+							<p>蒜片，洋葱碎，鸡翅，新奥尔良烤翅粉</p>
+							<h2>做法</h2>
+							<ol class="step">
+								<li>鸡翅洗净，在鸡翅上划两刀或者用牙签扎几个孔，让鸡翅入味</li>
+								<li>鸡翅用自制的新奥尔良烤鸡酱料腌制12小时</li>
+								<li>将腌制好的鸡翅摆在烤网上，用刷子刷一层酱料，再刷一层蜂蜜水，鸡翅尖用锡纸包上</li>
+								<li>烤箱预热后，鸡翅放到烤箱中层230摄氏度烤13分钟，烤盘铺上锡纸放在下层接油</li>
+								<li>分钟后将鸡翅取出翻面，再刷一层酱料和蜂蜜水，再入烤箱烤7分钟</li>
+								<li>然后取下锡纸，再烤3分钟即可</li>
+							</ol>
+							<div class="tips">
+								<h4>小贴士</h2>
+								<ul class="tip" style="list-style-type:none;">
+									<li>鸡翅尖要用锡纸包上，以免肉厚的地方还没有烤熟，翅尖的已经烤糊了。</li>
+									<li>烤制的过程中，下层接油的烤盘要铺上锡纸，因为料汁滴在烤盘上会碳化不好清理。</li>
+								</ul>
+							</div>
+						</div>
+						<div class="img"><img src="images/food14.jpg"></div>
+					</div>
 				</div>
-				<div class="div15">
+				<div class="div15 foods">
+				    <div class="menu">
+						<div class="cook-step">
+							<h2>简介</h2>
+							<p>	我又吃到了那肥而不腻的美味。红烧肉易做，但是做的好吃让人一记能记三年的，可真是不容易哦。快来学学捞面妈的秘诀吧！！</p>
+							<h2>用料</h2>
+							<p>蒜片，洋葱碎，鸡翅，新奥尔良烤翅粉</p>
+							<h2>做法</h2>
+							<ol class="step">
+								<li>鸡翅洗净，在鸡翅上划两刀或者用牙签扎几个孔，让鸡翅入味</li>
+								<li>鸡翅用自制的新奥尔良烤鸡酱料腌制12小时</li>
+								<li>将腌制好的鸡翅摆在烤网上，用刷子刷一层酱料，再刷一层蜂蜜水，鸡翅尖用锡纸包上</li>
+								<li>烤箱预热后，鸡翅放到烤箱中层230摄氏度烤13分钟，烤盘铺上锡纸放在下层接油</li>
+								<li>分钟后将鸡翅取出翻面，再刷一层酱料和蜂蜜水，再入烤箱烤7分钟</li>
+								<li>然后取下锡纸，再烤3分钟即可</li>
+							</ol>
+							<div class="tips">
+								<h4>小贴士</h2>
+								<ul class="tip" style="list-style-type:none;">
+									<li>鸡翅尖要用锡纸包上，以免肉厚的地方还没有烤熟，翅尖的已经烤糊了。</li>
+									<li>烤制的过程中，下层接油的烤盘要铺上锡纸，因为料汁滴在烤盘上会碳化不好清理。</li>
+								</ul>
+							</div>
+						</div>
+						<div class="img"><img src="images/food15.jpg"></div>
+					</div>
 				</div>
-				<div class="div16">
+				<div class="div16 foods">
+					<div class="menu">
+						<div class="cook-step">
+							<h2>简介</h2>
+							<p>	我又吃到了那肥而不腻的美味。红烧肉易做，但是做的好吃让人一记能记三年的，可真是不容易哦。快来学学捞面妈的秘诀吧！！</p>
+							<h2>用料</h2>
+							<p>蒜片，洋葱碎，鸡翅，新奥尔良烤翅粉</p>
+							<h2>做法</h2>
+							<ol class="step">
+								<li>鸡翅洗净，在鸡翅上划两刀或者用牙签扎几个孔，让鸡翅入味</li>
+								<li>鸡翅用自制的新奥尔良烤鸡酱料腌制12小时</li>
+								<li>将腌制好的鸡翅摆在烤网上，用刷子刷一层酱料，再刷一层蜂蜜水，鸡翅尖用锡纸包上</li>
+								<li>烤箱预热后，鸡翅放到烤箱中层230摄氏度烤13分钟，烤盘铺上锡纸放在下层接油</li>
+								<li>分钟后将鸡翅取出翻面，再刷一层酱料和蜂蜜水，再入烤箱烤7分钟</li>
+								<li>然后取下锡纸，再烤3分钟即可</li>
+							</ol>
+							<div class="tips">
+								<h4>小贴士</h2>
+								<ul class="tip" style="list-style-type:none;">
+									<li>鸡翅尖要用锡纸包上，以免肉厚的地方还没有烤熟，翅尖的已经烤糊了。</li>
+									<li>烤制的过程中，下层接油的烤盘要铺上锡纸，因为料汁滴在烤盘上会碳化不好清理。</li>
+								</ul>
+							</div>
+						</div>
+						<div class="img"><img src="images/food16.jpg"></div>
+					</div>
 				</div>
-				<div class="div17">
+				<div class="div17 foods">
+					<div class="menu">
+						<div class="cook-step">
+							<h2>简介</h2>
+							<p>	我又吃到了那肥而不腻的美味。红烧肉易做，但是做的好吃让人一记能记三年的，可真是不容易哦。快来学学捞面妈的秘诀吧！！</p>
+							<h2>用料</h2>
+							<p>蒜片，洋葱碎，鸡翅，新奥尔良烤翅粉</p>
+							<h2>做法</h2>
+							<ol class="step">
+								<li>鸡翅洗净，在鸡翅上划两刀或者用牙签扎几个孔，让鸡翅入味</li>
+								<li>鸡翅用自制的新奥尔良烤鸡酱料腌制12小时</li>
+								<li>将腌制好的鸡翅摆在烤网上，用刷子刷一层酱料，再刷一层蜂蜜水，鸡翅尖用锡纸包上</li>
+								<li>烤箱预热后，鸡翅放到烤箱中层230摄氏度烤13分钟，烤盘铺上锡纸放在下层接油</li>
+								<li>分钟后将鸡翅取出翻面，再刷一层酱料和蜂蜜水，再入烤箱烤7分钟</li>
+								<li>然后取下锡纸，再烤3分钟即可</li>
+							</ol>
+							<div class="tips">
+								<h4>小贴士</h2>
+								<ul class="tip" style="list-style-type:none;">
+									<li>鸡翅尖要用锡纸包上，以免肉厚的地方还没有烤熟，翅尖的已经烤糊了。</li>
+									<li>烤制的过程中，下层接油的烤盘要铺上锡纸，因为料汁滴在烤盘上会碳化不好清理。</li>
+								</ul>
+							</div>
+						</div>
+						<div class="img"><img src="images/food17.jpg"></div>
+					</div>
 				</div>
-				<div class="div18">
+				<div class="div18 foods">
+					<div class="menu">
+						<div class="cook-step">
+							<h2>简介</h2>
+							<p>	我又吃到了那肥而不腻的美味。红烧肉易做，但是做的好吃让人一记能记三年的，可真是不容易哦。快来学学捞面妈的秘诀吧！！</p>
+							<h2>用料</h2>
+							<p>蒜片，洋葱碎，鸡翅，新奥尔良烤翅粉</p>
+							<h2>做法</h2>
+							<ol class="step">
+								<li>鸡翅洗净，在鸡翅上划两刀或者用牙签扎几个孔，让鸡翅入味</li>
+								<li>鸡翅用自制的新奥尔良烤鸡酱料腌制12小时</li>
+								<li>将腌制好的鸡翅摆在烤网上，用刷子刷一层酱料，再刷一层蜂蜜水，鸡翅尖用锡纸包上</li>
+								<li>烤箱预热后，鸡翅放到烤箱中层230摄氏度烤13分钟，烤盘铺上锡纸放在下层接油</li>
+								<li>分钟后将鸡翅取出翻面，再刷一层酱料和蜂蜜水，再入烤箱烤7分钟</li>
+								<li>然后取下锡纸，再烤3分钟即可</li>
+							</ol>
+							<div class="tips">
+								<h4>小贴士</h2>
+								<ul class="tip" style="list-style-type:none;">
+									<li>鸡翅尖要用锡纸包上，以免肉厚的地方还没有烤熟，翅尖的已经烤糊了。</li>
+									<li>烤制的过程中，下层接油的烤盘要铺上锡纸，因为料汁滴在烤盘上会碳化不好清理。</li>
+								</ul>
+							</div>
+						</div>
+						<div class="img"><img src="images/food18.jpg"></div>
+					</div>
 				</div>
-				<div class="div19">
+				<div class="div19 foods">
+						<div class="menu">
+						<div class="cook-step">
+							<h2>简介</h2>
+							<p>	我又吃到了那肥而不腻的美味。红烧肉易做，但是做的好吃让人一记能记三年的，可真是不容易哦。快来学学捞面妈的秘诀吧！！</p>
+							<h2>用料</h2>
+							<p>蒜片，洋葱碎，鸡翅，新奥尔良烤翅粉</p>
+							<h2>做法</h2>
+							<ol class="step">
+								<li>鸡翅洗净，在鸡翅上划两刀或者用牙签扎几个孔，让鸡翅入味</li>
+								<li>鸡翅用自制的新奥尔良烤鸡酱料腌制12小时</li>
+								<li>将腌制好的鸡翅摆在烤网上，用刷子刷一层酱料，再刷一层蜂蜜水，鸡翅尖用锡纸包上</li>
+								<li>烤箱预热后，鸡翅放到烤箱中层230摄氏度烤13分钟，烤盘铺上锡纸放在下层接油</li>
+								<li>分钟后将鸡翅取出翻面，再刷一层酱料和蜂蜜水，再入烤箱烤7分钟</li>
+								<li>然后取下锡纸，再烤3分钟即可</li>
+							</ol>
+							<div class="tips">
+								<h4>小贴士</h2>
+								<ul class="tip" style="list-style-type:none;">
+									<li>鸡翅尖要用锡纸包上，以免肉厚的地方还没有烤熟，翅尖的已经烤糊了。</li>
+									<li>烤制的过程中，下层接油的烤盘要铺上锡纸，因为料汁滴在烤盘上会碳化不好清理。</li>
+								</ul>
+							</div>
+						</div>
+						<div class="img"><img src="images/food19.jpg"></div>
+					</div>
 				</div>
 			</div>
 	</div>
@@ -824,13 +1218,17 @@
 		});
 
 
-		$(".section4 .nei").children("div").click(function(){
-			$("div.cookbook").slideDown(500);
+		$(".section4 .nei").children("div.foods").click(function(e){
+			var cookDes = $("<div class='menu'></div>").html($(e.target).children("div.menu").html());
+			$("div.cookbook").slideDown(500).append(cookDes);
+
 		});
 
 		$(".section4 .cookbook").children("div.exit").click(function(){
-			$("div.cookbook").slideUp(500);
+			$("div.cookbook").slideUp(500).children("div.menu").remove();
 		});
+
+
 	});
 </script>
 </body>
